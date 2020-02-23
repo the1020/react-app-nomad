@@ -2,16 +2,20 @@ import React from "react";
 
 class App extends React.Component {
   state = {
-    count: 0
+    count: 0,
+    isLoading: true
   };
 
   constructor(props) {
     super(props);
-    console.log("constructor");
   }
 
   componentDidMount() {
     console.log("Mount");
+
+    setInterval(() => {
+      this.setState(current => ({ isLoading: false }));
+    }, 6000);
   }
   componentDidUpdate() {
     console.log("Update");
@@ -31,6 +35,7 @@ class App extends React.Component {
         <h1>The number is {this.state.count}</h1>
         <button onClick={this.add}>Add</button>
         <button onClick={this.minus}>Minus</button>
+        <h1>{this.state.isLoading ? "Loading..." : "Ready"}</h1>
       </div>
     );
   }
