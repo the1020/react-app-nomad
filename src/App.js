@@ -30,22 +30,24 @@ class App extends React.Component {
   render() {
     const { movies } = this.state;
     return (
-      <div className="movies">
-        {movies.map(current => {
-          console.log(current);
-          return (
-            <Movie
-              key={current.id}
-              id={current.id}
-              year={current.year}
-              title={current.title}
-              summary={current.summary}
-              poster={current.medium_cover_image}
-              genres={current.genres}
-            ></Movie>
-          );
-        })}
-      </div>
+      <section className="container">
+        <div className="movies">
+          {movies.map(current => {
+            console.log(current);
+            return (
+              <Movie
+                key={current.id}
+                id={current.id}
+                year={current.year}
+                title={current.title}
+                summary={current.summary}
+                poster={current.medium_cover_image}
+                genres={current.genres}
+              ></Movie>
+            );
+          })}
+        </div>
+      </section>
     );
   }
 }
