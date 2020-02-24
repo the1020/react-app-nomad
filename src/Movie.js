@@ -4,7 +4,7 @@ import "./Movie.css";
 
 function Movie({ year, title, summary, poster, genres }) {
   return (
-    <div classNme="movie">
+    <div className="movie">
       <img src={poster} alt={title} title={title}></img>
       <div className="movie__data">
         <h3 className="movie__title">{title}</h3>
@@ -16,7 +16,7 @@ function Movie({ year, title, summary, poster, genres }) {
             </li>
           ))}
         </ul>
-        <p className="movie__summary">{summary}</p>
+        <p className="movie__summary">{summary.slice(0, 140)}...</p>
       </div>
     </div>
   );
