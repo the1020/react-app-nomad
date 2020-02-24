@@ -30,7 +30,7 @@ class App extends React.Component {
   render() {
     const { movies } = this.state;
     return (
-      <div class="movies">
+      <div className="movies">
         {movies.map(current => {
           console.log(current);
           return (
@@ -41,6 +41,7 @@ class App extends React.Component {
               title={current.title}
               summary={current.summary}
               poster={current.medium_cover_image}
+              genres={current.genres}
             ></Movie>
           );
         })}
