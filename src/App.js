@@ -1,6 +1,7 @@
 import React from "react";
 import axios from "axios";
 import Movie from "./Movie";
+import "./App.css";
 
 class App extends React.Component {
   state = {
@@ -27,9 +28,10 @@ class App extends React.Component {
   }
 
   render() {
+    const { movies } = this.state;
     return (
-      <div>
-        {this.state.movies.map(current => {
+      <div class="movies">
+        {movies.map(current => {
           console.log(current);
           return (
             <Movie
