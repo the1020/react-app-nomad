@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/react-app-nomad/static/css/main.50291021.chunk.css",
+    "main.js": "/react-app-nomad/static/js/main.e35e5438.chunk.js",
+    "main.js.map": "/react-app-nomad/static/js/main.e35e5438.chunk.js.map",
+    "runtime-main.js": "/react-app-nomad/static/js/runtime-main.85edde10.js",
+    "runtime-main.js.map": "/react-app-nomad/static/js/runtime-main.85edde10.js.map",
+    "static/js/2.5dbff778.chunk.js": "/react-app-nomad/static/js/2.5dbff778.chunk.js",
+    "static/js/2.5dbff778.chunk.js.map": "/react-app-nomad/static/js/2.5dbff778.chunk.js.map",
+    "index.html": "/react-app-nomad/index.html",
+    "precache-manifest.5a16d04a1c987fd8933ec53f1dc76036.js": "/react-app-nomad/precache-manifest.5a16d04a1c987fd8933ec53f1dc76036.js",
+    "service-worker.js": "/react-app-nomad/service-worker.js",
+    "static/css/main.50291021.chunk.css.map": "/react-app-nomad/static/css/main.50291021.chunk.css.map",
+    "static/js/2.5dbff778.chunk.js.LICENSE.txt": "/react-app-nomad/static/js/2.5dbff778.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.85edde10.js",
+    "static/js/2.5dbff778.chunk.js",
+    "static/css/main.50291021.chunk.css",
+    "static/js/main.e35e5438.chunk.js"
+  ]
+}
